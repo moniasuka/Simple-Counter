@@ -10,17 +10,17 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 import {Counter} from "./component/counter.jsx";
 
+//incializacion de las variables
 let segundo = 0
 let minuto = 0
 let hora = 0
-
 let segundo2 = 0
 let minuto2= 0
 let hora2 = 0
 
-
+//funcion setInterval
 let timer = setInterval(()=> {
-console.log(segundo)
+
 if(segundo >= 10){
     segundo=0
     minuto++;
@@ -49,12 +49,12 @@ if(minuto2 >= 10)
     hora2++;
 }
 
-
+//rendering your react application
 ReactDOM.render(<Counter tiempo6={hora2} tiempo5={minuto2} tiempo4={segundo2} tiempo3={hora} tiempo2={minuto} tiempo={segundo} stop={timer}/>, document.querySelector("#app"));
 segundo ++; 
 
-//render your react application
-},1)
+
+},1000)
 
 
 

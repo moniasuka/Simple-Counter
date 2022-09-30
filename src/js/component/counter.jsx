@@ -30,7 +30,8 @@ return(
                 {props.tiempo}
                 </div>
                 <button className="bg-dark text-white display-1 my-2 border-secondary" type="button" onClick={()=>{clearInterval(props.stop)}}>Stop</button>
-            </div>   
+            </div> 
+  
         </div>
    
 
